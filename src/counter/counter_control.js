@@ -4,15 +4,14 @@ import {bindActionCreators} from 'redux'
 import { increment } from '../actions/actions_counter'
 import { decrement } from '../actions/actions_counter'
 
-const Control = ({dispatch,label,increment,decrement}) => {
-    console.log(label,increment,decrement)
+const Control = ({label,increment,decrement}) => {
     let actionObj = {
         "INCREMENT":increment,
         "DECREMENT":decrement
     }
     return (
         <div>
-    <button onClick={actionObj[label]}>{label}</button>
+            <button onClick={actionObj[label]}>{label}</button>
         </div>
     );
 };
