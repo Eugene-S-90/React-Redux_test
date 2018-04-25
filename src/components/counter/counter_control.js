@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import {bindActionCreators} from 'redux'
-import { increment } from '../actions/actions_counter'
-import { decrement } from '../actions/actions_counter'
+import { increment } from '../../actions/actions_counter'
+import { decrement } from '../../actions/actions_counter'
 
 const Control = ({label,increment,decrement}) => {
     let actionObj = {

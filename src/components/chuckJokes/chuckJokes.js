@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import {bindActionCreators} from 'redux'
-import { getChuckJokes } from '../actions/actions_chuckJokes'
+import { getChuckJokes } from '../../actions/actions_chuckJokes'
 import GetChuckJokesView from '../chuckJokes/chuckJokesView'
 
 
